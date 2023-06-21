@@ -1,0 +1,44 @@
+.square {
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: #1e2225;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .line {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .p1 {
+    color: #6da4f0;
+    background-color: #466ba2;
+  }
+  
+  .p2 {
+    color: #e95c5a;
+    background-color: #9f4747;
+  }
+  
+  .p1-winner .square {
+    color: #6da4f0;
+    background-color: #466ba2;
+  }
+  
+  .p2-winner .square {
+    color: #e95c5a;
+    background-color: #9f4747;
+  }
+  
+  .p1-bg {
+    background-color: #466ba2 !important;
+  }
+  
+  .p2-bg {
+    background-color: #9f4747 !important;
+  }

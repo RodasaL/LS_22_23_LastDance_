@@ -1,0 +1,20 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .board > .line {
+    margin: 10px;
+  }
+  
+  .board > .line > div {
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .line {
+    display: flex;
+    justify-content: center;
+  }

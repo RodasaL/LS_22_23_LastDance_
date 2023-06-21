@@ -1,0 +1,89 @@
+.shower {
+    display: flex;
+  }
+  
+  .shower > .user {
+    flex: 1;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .shower > .p1 {
+    color: #6da4f0;
+    background-color: #466ba2;
+    text-align: right;
+  }
+  
+  .shower > .p2 {
+    color: #e95c5a;
+    background-color: #9f4747;
+    text-align: left;
+  }
+  
+  .shower > .disabled {
+    color: #31383d;
+    background-color: #1e2225;
+  }
+  .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .label-container .player1-label,
+  .label-container .player2-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 6px;
+  }
+  
+  .label-container .player1-input,
+  .label-container .player2-input {
+    padding: 8px;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+
+  
+.player1-label{
+  margin-left: 430px;
+}
+.player2-label{
+  margin-right: 519px;
+}
+
+.player2-input{
+  border: 3px solid #b12a2a;
+  border-radius: 4px;
+  outline: none;
+}
+.player1-input{
+  border: 3px solid #5892e7;
+  border-radius: 4px;
+  outline: none;
+}
+.blue-x {
+  color: blue;
+  font-size: 20px;
+}
+.red-o {
+  color: red;
+  font-size: 20px;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
