@@ -45,10 +45,10 @@ const Menu = ({ user,winner, setWinner, boardDisabler, boardEnabler,reset }) => 
 
 
   useEffect(() => {
-    if (winner === 1) {
+    if (winner === 2) {
       setPlayer1Disabled(false);
       setPlayer2Disabled(true);
-    } else if (winner === 2) {
+    } else if (winner === 1) {
       setPlayer1Disabled(true);
       setPlayer2Disabled(false);
     } else if (winner === 0) {
@@ -69,15 +69,15 @@ const Menu = ({ user,winner, setWinner, boardDisabler, boardEnabler,reset }) => 
     <div>
       <div className="shower">
         <div className={`user p1 ${player1Disabled ? "disabled" : ""}`}>
-          {winner === 1 ? "👑" : ""} {player1Name}
+          {winner === 2 ? "👑" : ""} {player1Name}
           <br />
-          {winner === null ? timeP1 : winner === 1 ? timeP1 : 0 }
+          {winner === null ? timeP1 : winner === 2 ? timeP1 : 0 }
           
         </div>
         <div className={`user p2 ${player2Disabled ? "disabled" : ""}`}>
-          {player2Name} {winner === 2 ? "👑" : ""}
+          {player2Name} {winner === 1 ? "👑" : ""}
           <br />
-          {winner === null ? timeP2 : winner === 2 ? timeP2 : 0 }
+          {winner === null ? timeP2 : winner === 1 ? timeP2 : 0 }
         </div>
       </div>
       <div className="label-container">
